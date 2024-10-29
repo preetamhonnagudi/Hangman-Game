@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game - Levels</title>
+    <style>
+        /* CSS for the levels page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .levels-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .level-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #1465ab;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .level-button:hover {
+            background-color: #0e4478;
+        }
+    </style>
+</head>
+<body>
+    <div class="levels-container">
+        <h1>Choose a Level</h1>
+        <div class="level-buttons">
+            <!-- Generate level buttons dynamically -->
+            <!-- Replace 'game-page.html' with the URL of your game page -->
+            <!-- Replace '#' with the appropriate level number -->
+            <!-- You can use a loop in your backend to generate buttons dynamically -->
+            <button class="level-button" onclick="enterGame(1)">Level 1</button>
+            <button class="level-button" onclick="enterGame(2)">Level 2</button>
+            <!-- Add more buttons for other levels -->
+            <!-- Example: <button class="level-button" onclick="enterGame(3)">Level 3</button> -->
+            <!-- Repeat this pattern for all 100 levels -->
+        </div>
+    </div>
+
+    <!-- JavaScript to handle level selection and enter game -->
+    <script>
+        function enterGame(level) {
+            // Redirect to the game page with the selected level
+            window.location.href = "game-page.html?level=" + level; // Replace 'game-page.html' with your game page URL
+        }
+    </script>
+</body>
+</html>

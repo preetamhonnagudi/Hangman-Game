@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game Entry</title>
+    <link rel="stylesheet" href="style.css"> <!-- Include your CSS file -->
+    <style>
+        /* Additional CSS for styling the play button */
+        .hanging img{
+            justify-content: center;
+            justify-items: center;
+            width: 480px;
+            padding: 50px;
+            margin-left: 33.5%;
+        }
+        .welcome{
+            padding-top: 30px;
+            font-size: 70px;
+            font-family: "Amatic SC", sans-serif;
+            text-align: center;
+            margin-top: 20px;
+            text-transform: uppercase;
+            color: #ab5014;
+        }
+        .play-button {
+            background-color: #ab5014; /* Green */
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            margin-left: 48%;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+        }
+
+        /* Hover animation */
+        .play-button:hover {
+            transform: scale(1.05); /* Increase button size on hover */
+            background-color: #b59516; /* Darken button color */
+            box-shadow: 0 8px 16px rgba( 2, 2, 2, 0.5); /* Increase shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="entry-page">
+        <h1 class="welcome">Welcome to Hangman Game</h1>
+        <div class="hanging">
+            <img src="images/hangman-6.svg" alt="">
+        </div>
+        <a href="index.html"><button id="play-btn" class="play-button">Play</button></a>
+    </div>
+
+    <script src="scripts/script.js" defer></script> <!-- Include your JavaScript file -->
+</body>
+</html>
